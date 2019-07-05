@@ -1,4 +1,4 @@
-# Heroku Minecraft Buildpack
+# Heroku Minecraft Buildpack (Spigot)
 
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks)
 for running a Minecraft server in a [dyno](https://devcenter.heroku.com/articles/dynos).
@@ -22,7 +22,7 @@ Create a Heroku app, set your ngrok token, and push:
 ```sh-session
 $ heroku create
 $ heroku buildpacks:add heroku/jvm
-$ heroku buildpacks:add jkutner/minecraft
+$ heroku buildpacks:add https://github.com/ekaomk/heroku-buildpack-minecraft
 $ heroku config:set NGROK_API_TOKEN="xxxxx"
 $ git push heroku master
 ```
@@ -88,7 +88,7 @@ You can customize ngrok by setting the `NGROK_OPTS` config variable. For example
 $ heroku config:set NGROK_OPTS="--remote-addr 1.tcp.ngrok.io:25565"
 ```
 
-### Minecraft
+### Minecraft (Spigot)
 
 You can choose the Spigot version by setting the SPIGOT_VERSION like so:
 
