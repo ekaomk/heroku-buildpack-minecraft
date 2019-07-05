@@ -73,7 +73,7 @@ mv spigot.jar $BUILD_DIR/spigot.jar
 echo "done"
 
 if [ -n "${MINECRAFT_EULA:-""}" ]; then
-  echo -n "-----> Accepting Spigot EULA... "
+  echo -n "-----> Accepting Minecraft EULA... "
   echo "eula=true" >> $BUILD_DIR/eula.txt
   echo "done"
 fi
