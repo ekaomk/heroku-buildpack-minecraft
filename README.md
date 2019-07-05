@@ -90,10 +90,10 @@ $ heroku config:set NGROK_OPTS="--remote-addr 1.tcp.ngrok.io:25565"
 
 ### Minecraft
 
-You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
+You can choose the Spigot version by setting the SPIGOT_VERSION like so:
 
 ```
-$ heroku config:set MINECRAFT_VERSION="1.8.3"
+$ heroku config:set SPIGOT_VERSION="1.14.3"
 ```
 
 You can also configure the server properties by creating a `server.properties`
